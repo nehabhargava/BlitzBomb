@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <TextView  android:id="@+id/tv_browse_video"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   android:gravity="center"
+ android:background="@color/Grey"
+  android:text="Browse Video"></TextView>
+  <RelativeLayout 
+  android:id="@+id/rr_browse_video_title"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_below="@+id/tv_browse_video">
+  <ListView android:id="@id/android:list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/whitecolor"
+  
+    android:drawSelectorOnTop="false"/>
+  </RelativeLayout>
+</RelativeLayout>

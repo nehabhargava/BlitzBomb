@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+<RelativeLayout android:background="@drawable/smaoke_bg" android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+    <ImageView android:layout_width="fill_parent" android:layout_height="120dp" android:id="@+id/iv_login_logo" android:src="@drawable/blitzbomblogo" android:layout_alignParentTop="true"></ImageView>
+    <RelativeLayout android:layout_width="wrap_content" android:id="@+id/relativeLayout2" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:layout_height="wrap_content" android:id="@+id/tv_login" android:text="Login" android:textSize="20dp" android:layout_marginTop="10dp" android:layout_width="wrap_content" android:layout_marginLeft="13dp" android:textColor="@color/Black"></TextView>
+        <EditText android:layout_height="40dp" android:text="EditText" android:hint="Email" android:layout_marginTop="4dp" android:layout_width="300dp" android:inputType="text|textNoSuggestions" android:id="@+id/et_login_email" android:layout_marginLeft="10dp" android:layout_below="@+id/tv_login" android:maxLength="50" android:maxLines="1"></EditText>
+        <EditText android:layout_height="40dp" android:text="EditText" android:hint="password" android:layout_marginTop="4dp" android:layout_width="300dp" android:inputType="textPassword|textNoSuggestions" android:id="@+id/et_login_password" android:layout_marginLeft="10dp" android:layout_below="@+id/et_login_email" android:maxLength="15" android:maxLines="1"></EditText>
+        <ImageButton android:id="@+id/btn_login_ok" android:layout_width="300dp" android:layout_height="35dp" android:layout_marginLeft="10dp" android:layout_below="@+id/et_login_password" android:layout_marginTop="24dp" android:background="@drawable/login_btn"></ImageButton>
+        <ImageButton android:id="@+id/ivBtn_login_forgot" android:layout_width="300dp" android:layout_height="35dp" android:layout_marginLeft="10dp" android:layout_below="@+id/btn_login_ok" android:layout_marginTop="14dp" android:background="@drawable/forget_btn"></ImageButton>
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/dullwhitecolor">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/smaoke_bg">
+    <ImageView android:id="@+id/inSenderID" 
+    android:src="@drawable/small_logo"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"/>
+   
+	<RelativeLayout 
+	android:layout_height="wrap_content" 
+	android:layout_below="@+id/inSenderID" 
+	android:layout_width="fill_parent" 
+	android:background="@drawable/bar"
+	android:id="@+id/rr_grid_titleBar">
+	<ImageView android:id="@+id/iv_grid_user_small" 
+	android:layout_width="wrap_content" 
+	android:layout_height="50dp" 
+	android:src="@drawable/icon"></ImageView>
+   <TextView 
+	android:id="@+id/tv_Grid_tittle" 
+	android:layout_below="@+id/inSenderID"
+	android:layout_width="wrap_content" 
+	android:layout_marginTop="6dp"
+	android:layout_marginLeft="6dp"
+	android:textColor="#000000"
+	android:layout_toRightOf="@+id/iv_grid_user_small"
+	android:layout_height="30dip" 
+    android:text=""/>
+   <TextView 
+	android:id="@+id/tv_Grid_tittle_welcome" 
+	android:layout_below="@+id/inSenderID"
+	android:layout_width="wrap_content" 
+	android:layout_marginTop="22dp"
+	android:textColor="#000000"
+	android:layout_marginLeft="6dp"
+    android:layout_toRightOf="@+id/iv_grid_user_small"
+	android:layout_height="30dip" 
+    android:text="Welcome To BlitzBomb"/>
+  </RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/rr_gird_view"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:layout_below="@+id/rr_grid_titleBar">
+	<GridView 
+	    android:id="@+id/gv_Grid" 
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:columnWidth="90dp"
+		android:numColumns="3" 
+		android:verticalSpacing="60dip"
+		android:horizontalSpacing="10dip"
+		android:stretchMode="columnWidth"
+		android:gravity="center" 
+		android:layout_below="@+id/rr_grid_titleBar" />
+    </RelativeLayout>
+   
+  </RelativeLayout>
+</RelativeLayout>

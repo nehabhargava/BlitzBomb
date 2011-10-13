@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/whitecolor">
+  <RelativeLayout 
+  android:id="@+id/rr_User_Privacy_title"
+  android:layout_height="60dp" 
+  android:layout_width="fill_parent"
+  android:background="@drawable/topsmokeeffect">
+  <ImageView android:layout_width="fill_parent"
+  android:layout_height="60dp"
+  android:id="@+id/iv_User_Privacy"
+  android:src="@drawable/small_logo"/>
+</RelativeLayout>
+<ScrollView
+ android:id="@+id/sv_user_privacy"
+ android:layout_height="200dp"
+ android:layout_width="fill_parent"
+ android:layout_below="@+id/rr_User_Privacy_title">
+<RelativeLayout
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:layout_above="@+id/iv_userPrivacy_checkedList">
+<TextView
+   android:id="@+id/tv_user_privacy"
+   android:layout_marginLeft="10dp"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Privacy Settings"
+   android:textStyle="bold"
+   android:textColor="@color/Green"/>
+   <TextView
+   android:id="@+id/tv_user_privacy_Blocked_Members"
+   android:layout_below="@+id/tv_user_privacy"
+   android:layout_marginLeft="10dp"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Blocked Members"
+   android:textColor="@color/Green"
+   android:textSize="10dp"/>
+   <TextView
+   android:id="@+id/tv_user_privacy_Adding_person"
+   android:layout_below="@+id/tv_user_privacy_Blocked_Members"
+   android:layout_marginLeft="10dp"
+   android:layout_width="fill_parent"
+   android:layout_height="30dp"
+   android:text="Adding a person to your block list makes your profile (and all of your other content) unviewable to them. Any connections you have to the blocked person will be canceled. To add someone to your block list, visit that person's profile page."
+   android:textColor="@color/Black"
+   android:textSize="10dp"/>
+   <CheckBox
+   android:id="@+id/cb_user_privacy_check"
+   android:layout_width="40dp"
+   android:layout_height="40dp"
+   android:layout_marginTop="10dp"
+   android:layout_below="@+id/tv_user_privacy_Adding_person"/>
+   <TextView
+   android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+   android:layout_marginTop="15dp"
+   android:layout_toRightOf="@+id/cb_user_privacy_check"
+   android:layout_below="@+id/tv_user_privacy_Adding_person"
+   android:text="Display me in searches, browsing members, or the Online Members list."
+   android:textColor="@color/Black"
+   android:textSize="10dp"/>
+   <TextView
+   android:id="@+id/tv_user_privacy_ProfilePrivacy"
+   android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="10dp"
+   android:layout_below="@+id/cb_user_privacy_check"
+   android:text="Profile Privacy :    Who can view your profile?"
+   android:textColor="@color/Green"
+   android:textSize="10dp"/>
+   <RadioGroup
+   android:id="@+id/rg_user_notification_profilePrivacy"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@+id/tv_user_privacy_ProfilePrivacy">
+   <RadioButton
+   android:layout_width="37dp"
+   android:layout_height="37dp"></RadioButton>
+    <RadioButton
+   android:layout_width="37dp"
+   android:layout_height="37dp"></RadioButton>
+    <RadioButton
+   android:layout_width="37dp"
+   android:layout_height="37dp"></RadioButton>
+   </RadioGroup>
+   
+   <TextView
+   android:id="@+id/tv_user_privacy_ProfilePostingPrivacy"
+   android:layout_height="wrap_content"
+   android:layout_width="290dp"
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="10dp"
+   android:layout_below="@+id/rg_user_notification_profilePrivacy"
+   android:text="Profile Posting Privacy:    Who can post on your profile?"
+   android:textColor="@color/Green"
+   android:textSize="10dp"/>
+   <RadioGroup
+   android:id="@+id/rg_user_notification_profilePostingPrivacy"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_below="@+id/tv_user_privacy_ProfilePostingPrivacy">
+   <RadioButton
+   android:layout_width="37dp"
+   android:layout_height="37dp"></RadioButton>
+    <RadioButton
+   android:layout_width="37dp"
+   android:layout_height="37dp"></RadioButton>
+    <RadioButton
+   android:layout_width="37dp"
+   android:layout_height="37dp"></RadioButton>
+   </RadioGroup>
+  
+  
+  </RelativeLayout>
+ </ScrollView>
+ <TextView
+  android:id="@+id/tv_User_Privacy_Rcent_Activity_Privacy"
+ 
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Recent Activity Privacy:    Which of the following things do you want to have published about you in the recent activity feed?"
+   android:textSize="10dp"
+    android:layout_below="@+id/sv_user_privacy"
+  android:textColor="@color/Green"/>
+ <ListView
+   android:id="@+id/iv_userPrivacy_checkedList"
+   android:layout_width="fill_parent"
+   android:layout_height="60dp"
+   android:layout_below="@+id/tv_User_Privacy_Rcent_Activity_Privacy"
+   android:layout_above="@+id/rr_user_privacy_bottom1"/>
+ <RelativeLayout
+ android:id="@+id/rr_user_privacy_bottom1"
+ android:layout_width="fill_parent"
+ android:background="@drawable/smaoke_bg"
+ android:layout_height="40dp"
+ android:layout_alignParentBottom="true">
+ <Button
+ android:id="@+id/btn_user_privacy_save"
+ android:layout_width="150dp"
+ android:layout_height="33dp"
+ android:layout_centerVertical="true"
+ android:text="Save Changes"
+ android:layout_marginLeft="10dp"
+ android:background="@color/Green"
+ />
+ <Button
+ android:id="@+id/btn_user_privacy_cancle"
+ android:layout_width="100dp"
+ android:layout_height="33dp"
+ android:layout_centerVertical="true"
+ android:text="Cancel"
+ android:layout_alignParentRight="true"
+ android:layout_marginRight="10dp"
+ android:background="@color/Green"
+ />
+ </RelativeLayout>
+ 
+ 
+</RelativeLayout>

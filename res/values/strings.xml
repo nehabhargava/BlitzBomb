@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, BlitzBombGrid!</string>
+    <string name="Title">Select Country</string>
+    <string name="State">Select State</string>
+    <string name="City">Select City</string>
+    <string name="gender">Select Gender</string>
+    <string name="app_name">BlitzBomb</string>
+    <color name="bluecolor" >#990099ff</color>
+	<color name="whitecolor" >#ffffff</color>
+	<color name="dullwhitecolor" >#eeeeee</color>
+	<color name="Grey">#E6E6DC</color>
+	<color name="DarkGrey">#515151</color>
+	<color name="Black">#000000</color>
+	<color name="Green">#4C7D7E</color>
+	<string name="Index">index.php?mode=android</string>
+	<string name="profile">profile.php?mode=android</string>
+	<string name="url">http://10.10.10.122/blitzbomb/arn/</string>
+</resources>
+<!-- http://10.10.10.122/blitzbomb/arn/index.php?mode=android -->

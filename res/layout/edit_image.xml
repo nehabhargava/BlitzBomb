@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/whitecolor">
+  <RelativeLayout 
+  android:id="@+id/rr_EditImage_title"
+  android:layout_height="80dp" 
+  android:layout_width="fill_parent"
+  android:background="@drawable/topsmokeeffect">
+  <ImageView 
+  android:id="@+id/iv_EditImage_change_picture"
+  android:layout_width="fill_parent"
+  android:layout_height="60dp"
+  android:src="@drawable/small_logo"/>
+  <TextView
+  android:id="@+id/tv_change_password_change_Picture" 
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Change Picture"
+  android:textColor="@color/Green"
+  android:layout_alignParentBottom="true"/>
+  <TextView
+  android:id="@+id/tv_change_password_change_password" 
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Change Password"
+  android:textColor="@color/Green"
+  android:layout_alignParentRight="true"
+  android:layout_alignParentBottom="true"/>
+  </RelativeLayout>  
+  <RelativeLayout 
+  android:layout_height="wrap_content"
+  android:layout_width="wrap_content"
+  android:layout_centerInParent="true">
+  <ImageView
+  android:id="@+id/iv_EditImage_Image"
+  android:layout_below="@+id/rr_EditImage_title"
+  android:layout_height="200dip"
+  android:layout_marginTop="20dp"
+  android:layout_width="fill_parent"
+  android:src="@drawable/koala"/>
+  <Button
+  android:id="@+id/btn_EditImage_Save"
+  android:layout_below="@+id/iv_EditImage_Image"
+  android:layout_width="100dp"
+  android:layout_marginTop="15dp"
+  android:layout_marginLeft="15dp"
+  android:text="Save"
+  android:textColor="@color/whitecolor"
+  android:layout_height="35dp"
+  android:background="@color/Green"/>
+  <Button
+  android:id="@+id/btn_EditImage_Cancel"
+  android:layout_below="@+id/iv_EditImage_Image"
+  android:layout_alignParentRight="true"
+  android:layout_width="100dp"
+  android:layout_marginTop="15dp"
+  android:layout_marginRight="15dp"
+  android:text="Cancel"
+  android:textColor="@color/whitecolor"
+  android:layout_height="35dp"
+  android:background="@color/Green"/>
+  </RelativeLayout>
+</RelativeLayout>

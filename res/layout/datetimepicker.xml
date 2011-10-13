@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical" 
+	android:background="@color/Grey">
+	
+<RelativeLayout 
+ android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<TextView 
+	android:id="@+id/tvSetDateTimeSetDate"
+		android:layout_marginLeft="30dip" 
+		android:layout_marginTop="10dip"
+		android:layout_width="261dip" 
+		android:layout_height="wrap_content"
+		android:background="@color/DarkGrey" 
+		android:text="Set Date"
+		android:textColor="@color/bluecolor" 
+		android:gravity="center" 
+		android:textStyle="bold" 
+		android:paddingBottom="4dip"
+		android:paddingTop="4dip"/>
+	<DatePicker 
+	    android:id="@+id/dpSetDateTime" 
+		android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		android:background="@color/DarkGrey" 
+		android:layout_marginLeft="30dip"
+	    android:layout_below="@+id/tvSetDateTimeSetDate" />
+
+	<TextView 
+	android:id="@+id/tvSetDateTimeSetTime" 
+		android:layout_marginTop="10dip" 
+		android:layout_width="225dip"
+		android:layout_height="wrap_content" 
+		android:background="@color/DarkGrey"
+		android:text="Set Time" 
+		android:textColor="@color/bluecolor" 
+		android:gravity="center"
+		android:layout_below="@+id/dpSetDateTime" 
+		android:textStyle="bold" 
+		android:paddingBottom="4dip" 
+		android:paddingTop="4dip"
+		android:layout_marginLeft="50dip"/>
+	<TimePicker  
+	android:id="@+id/tpSetDateTime"
+		android:layout_width="225dip" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="50dip" 
+		android:background="@color/DarkGrey"
+		android:layout_below="@+id/tvSetDateTimeSetTime" />
+	<Button 
+	android:id="@+id/btSetDateTimeSet" 
+	android:layout_width="110dip"
+		android:layout_height="wrap_content" 
+		android:text="Set"
+		android:layout_marginLeft="50dip" 
+		android:layout_marginTop="30dip"
+		android:layout_below="@+id/tpSetDateTime" 
+		android:textColor="@color/whitecolor"/>
+	<Button android:id="@+id/btSetDateTimeCancel"
+		android:layout_width="110dip" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dip" 
+		android:text="Cancel"
+		android:textColor="@color/whitecolor"
+		android:layout_below="@+id/tpSetDateTime"
+		 android:layout_toRightOf="@+id/btSetDateTimeSet" />
+</RelativeLayout>
+</LinearLayout>

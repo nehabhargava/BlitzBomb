@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/whitecolor">
+    <ListView android:id="@id/android:list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_above="@+id/rr_notification_bottom"
+    android:background="#ffffff"
+    android:drawSelectorOnTop="false"/>
+  <RelativeLayout 
+  android:id="@+id/rr_notification_bottom"
+  android:layout_width="wrap_content"
+  android:layout_height="50dp"
+  android:layout_alignParentBottom="true">
+  <Button
+  android:id="@+id/btn_notification_Save"
+  android:layout_width="160dp"
+  android:layout_height="40dp"
+  android:text="Save Changes"
+  android:background="@color/Green"
+  android:layout_marginLeft="5dp"
+  android:layout_centerVertical="true"
+  android:textColor="@color/whitecolor"></Button>
+  <Button
+  android:id="@+id/btn_notification_Cancel"
+  android:layout_width="140dp"
+  android:layout_height="40dp"
+  android:layout_centerVertical="true"
+  android:layout_alignParentRight="true"
+  android:layout_marginRight="5dp"
+  android:text="Cancel"
+  android:background="@color/Green"
+  android:textColor="@color/whitecolor"/>
+ </RelativeLayout> 
+</RelativeLayout>

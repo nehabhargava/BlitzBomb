@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/whitecolor">
+  <RelativeLayout android:id="@+id/rr_fail_title"
+  android:layout_width="fill_parent"
+  android:background="@drawable/topsmokeeffect"
+  android:layout_height="60dp">
+  <TextView 
+   android:id="@+id/tv_fail_label"
+   android:layout_height="wrap_content" 
+   android:layout_width="wrap_content"
+   android:textSize="25dp"
+   android:textColor="@color/Black"
+   android:layout_centerHorizontal="true"
+   android:text="Fail"/>
+   <TextView
+    android:id="@+id/tv_fail_video"
+    android:layout_below="@+id/tv_fail_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Vedio"
+    android:textColor="@color/Green"
+    android:textSize="15dp"
+    android:layout_marginLeft="5dp"/>
+    <TextView
+    android:id="@+id/tv_fail_newest"
+    android:layout_below="@+id/tv_fail_label"
+    android:layout_toRightOf="@+id/tv_fail_video"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Newest to oldest"
+    android:textColor="@color/Green"
+    android:textSize="15dp"/>
+    <TextView
+    android:id="@+id/tv_fail_Todays"
+    android:layout_below="@+id/tv_fail_label"
+    android:layout_toRightOf="@+id/tv_fail_newest"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Todays post"
+    android:textColor="@color/Green"
+    android:textSize="15dp"/>
+    <View
+    android:id="@+id/view_fail_saprator_list"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp" 
+    android:layout_alignParentBottom="true"
+    android:background="#FF8040"/>
+   </RelativeLayout>
+   <ListView android:id="@id/android:list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="#ffffff"
+    android:layout_below="@+id/rr_fail_title"
+    android:drawSelectorOnTop="false"/>
+</RelativeLayout>

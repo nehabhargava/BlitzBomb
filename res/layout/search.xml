@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/dullwhitecolor">
+   <TextView 
+  android:layout_width="fill_parent"
+  android:layout_height="50dp"
+  android:layout_alignParentTop="true"
+  android:text="Search Member"
+  android:paddingTop="16dp"
+  android:paddingLeft="110dp"
+  android:textStyle="bold"
+  android:background="@color/DarkGrey"></TextView>
+  <RelativeLayout android:id="@+id/rr_search"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_centerInParent="true">
+ 
+  <EditText 
+  android:id="@+id/et_search_name"
+  android:layout_height="40dp"
+  android:layout_width="300dp"
+  android:hint="Type Name"
+  android:inputType="text|textNoSuggestions"
+  android:maxLines="1"
+  android:maxLength="30"
+  android:layout_marginLeft="15dp"
+  android:layout_marginTop="25dp"
+  android:imeOptions="actionNext"/>
+   <Spinner
+  android:id="@+id/sp_search_gender"
+  android:layout_height="40dp"
+  android:layout_width="300dp"
+  android:hint="Type Search"
+   android:imeOptions="actionNext"
+  android:layout_below="@+id/et_search_name"
+  android:layout_marginLeft="15dp"
+  android:layout_marginTop="2dp"/>
+     <Spinner
+  android:id="@+id/sp_search_country"
+  android:layout_height="40dp"
+  android:layout_width="300dp"
+  android:hint="Type Search"
+   android:imeOptions="actionNext"
+  android:layout_below="@+id/sp_search_gender"
+  android:layout_marginLeft="15dp"
+   android:layout_marginTop="2dp"/>
+   <Spinner
+  android:id="@+id/sp_search_state"
+  android:layout_height="40dp"
+  android:layout_width="300dp"
+  android:hint="Type Search"
+   android:imeOptions="actionNext"
+  android:layout_below="@+id/sp_search_country"
+  android:layout_marginLeft="15dp"
+   android:layout_marginTop="2dp"/>
+   <Spinner
+  android:id="@+id/sp_search_city"
+  android:layout_height="40dp"
+  android:layout_width="300dp"
+  android:hint="Type Search"
+   android:imeOptions="actionNext"
+  android:layout_below="@+id/sp_search_state"
+  android:layout_marginLeft="15dp"
+   android:layout_marginTop="2dp"/>
+   <EditText 
+  android:id="@+id/et_search_Email"
+  android:layout_height="40dp"
+  android:layout_width="300dp"
+  android:hint="Type Email"
+  android:inputType="textEmailAddress|textNoSuggestions"
+  android:maxLines="1"
+  android:maxLength="40"
+  android:layout_below="@+id/sp_search_city"
+  android:layout_marginLeft="15dp"
+  android:layout_marginTop="2dp"/>
+  
+  </RelativeLayout>
+  <RelativeLayout 
+  android:id="@+id/rr_search_buttom"
+  android:layout_height="wrap_content"
+  android:layout_width="fill_parent"
+  android:layout_alignParentBottom="true">
+  <Button 
+  android:id="@+id/btn_search_Serach"
+  android:layout_height="wrap_content"
+  android:layout_width="100dp"
+  android:text="Search"
+  android:layout_alignParentRight="true"/>
+  <Button 
+  android:id="@+id/btn_search_cancel"
+  android:layout_height="wrap_content"
+  android:layout_width="100dp"
+  android:text="cancel"
+  android:layout_alignParentLeft="true"/>
+  </RelativeLayout>
+</RelativeLayout>

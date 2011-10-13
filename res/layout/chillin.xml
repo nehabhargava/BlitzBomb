@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:background="#ffffff">
+  <View android:id="@+id/view_chillin_top" android:layout_height="60dp" 
+  android:layout_width="fill_parent"
+  android:background="#888888"
+  android:layout_alignParentTop="true"/>
+  <ImageView android:id="@+id/iv_chillin_search"
+  android:layout_height="wrap_content" 
+  android:layout_width="wrap_content"
+  android:layout_alignParentTop="true"
+  android:src="@drawable/cross"
+  android:layout_alignParentRight="true"></ImageView>
+  <EditText 
+  android:id="@+id/et_chillin_serach_location" 
+  android:layout_height="wrap_content" 
+  android:layout_width="220dp"
+  android:hint="Search Location"
+  android:layout_marginTop="5dp"
+  android:visibility="invisible"
+  android:inputType="textNoSuggestions|text"
+  android:imeOptions="actionSearch"/>
+  <Button 
+  android:id="@+id/btn_chillin_serach" 
+  android:layout_height="48dp"
+  android:visibility="invisible"
+  android:layout_width="100dp"
+  android:layout_marginTop="5dp" 
+  android:layout_toRightOf="@+id/et_chillin_serach_location"
+  android:text="Search"/>
+  <com.google.android.maps.MapView 
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/et_chillin_serach_location"
+        android:enabled="true"
+        android:clickable="true"
+        android:apiKey="0xB673JE3WAbzKCjrtT1YNBQkOAGkfkvO9p-UKg"/>
+        <LinearLayout android:id="@+id/zoom" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true" 
+        android:layout_centerHorizontal="true"/> 
+        <EditText 
+        android:id="@+id/et_chillin_selected_location"
+        android:layout_width="250dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/mapView"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"/>
+        <TextView 
+         android:id="@+id/tv_chillin_select_date"
+         android:layout_height="wrap_content" 
+         android:text="Select Chilling Date"
+         android:textSize="10dp"
+         android:layout_marginTop="10dp"
+         android:textColor="#000000"
+         android:layout_below="@+id/et_chillin_selected_location"
+         android:layout_width="80dp"/>
+       <Button 
+         android:id="@+id/btn_chillin_selected_date"
+         android:layout_width="150dp"
+         android:layout_toRightOf="@+id/tv_chillin_select_date"
+         android:layout_below="@+id/et_chillin_selected_location"
+         android:layout_height="wrap_content"/>
+</RelativeLayout>

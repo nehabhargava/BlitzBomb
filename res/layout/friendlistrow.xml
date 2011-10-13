@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@color/whitecolor">
+  <ImageView android:id="@+id/iv_friend_user_image" android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:src="@drawable/icon"
+  android:layout_marginLeft="7dp"
+  android:layout_marginTop="7dp"/>
+  <TextView android:id="@+id/tv_friends_username"
+  android:layout_marginTop="9dp"
+  android:textColor="@color/Black"
+  android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:text="User name" android:textSize="10dp"
+  android:layout_toRightOf="@+id/iv_friend_user_image"/>
+  <TextView android:id="@+id/tv_friends_gender"
+  android:layout_marginTop="1dp"
+  android:textColor="@color/Black"
+  android:layout_below="@+id/tv_friends_username"
+  android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:text="Gender" android:textSize="10dp"
+  android:layout_toRightOf="@+id/iv_friend_user_image"/>
+  <TextView android:id="@+id/tv_friends_age"
+  android:layout_marginTop="1dp"
+  android:textColor="@color/Black"
+  android:layout_below="@+id/tv_friends_gender"
+  android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:text="Age" android:textSize="10dp"
+  android:layout_toRightOf="@+id/iv_friend_user_image"/>
+   <ImageView android:id="@+id/iv_friend_option_image" 
+   android:layout_width="wrap_content"
+  android:layout_marginRight="10dp"
+  android:layout_height="wrap_content" android:src="@drawable/setting"
+  android:layout_alignParentRight="true"
+  android:layout_marginTop="15dp"/>
+</RelativeLayout>

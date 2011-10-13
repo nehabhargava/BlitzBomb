@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/Grey">
+  <RelativeLayout android:id="@+id/rr_search_member_title"
+  android:layout_width="fill_parent"
+  android:layout_height="60dp"
+  android:background="@color/dullwhitecolor">
+  <ImageView android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:src="@drawable/small_logo"></ImageView>
+  </RelativeLayout>
+   <ListView android:id="@id/android:list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/dullwhitecolor"
+    android:layout_below="@+id/rr_search_member_title"
+    android:drawSelectorOnTop="false"
+     />
+    
+</RelativeLayout>

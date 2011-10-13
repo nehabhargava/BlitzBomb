@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/whitecolor">
+<Button 
+  android:id="@+id/btn_compose_message_compose_message" 
+  android:layout_width="140dp"
+  android:layout_height="50dp"
+  android:background="@color/dullwhitecolor"
+  android:text="Compose Message"
+  android:textColor="@color/Black"
+  android:textStyle="bold"/>
+<Button 
+  android:id="@+id/btn_compose_message_inbox" 
+  android:layout_width="70dp"
+  android:layout_height="50dp"
+  android:background="@color/dullwhitecolor"
+  android:text="Inbox"
+  android:textColor="@color/Black"
+  android:textStyle="bold"
+  android:layout_toRightOf="@+id/btn_compose_message_compose_message"/>
+<Button 
+  android:id="@+id/btn_compose_message_sent_messages" 
+  android:layout_width="120dp"
+  android:layout_height="50dp"
+  android:layout_toRightOf="@+id/btn_compose_message_inbox"
+  android:background="@color/dullwhitecolor"
+  android:text="Sent Messages"
+  android:textColor="@color/Black"
+  android:textStyle="bold"/>
+<View 
+   android:id="@+id/view_compose_message_middle_line"
+   android:layout_below="@+id/btn_compose_message_sent_messages"
+   android:layout_width="fill_parent" 
+   android:layout_height="10dp"/>
+<TextView android:id="@+id/tv_compose_message_to"
+android:layout_width="70dp"
+android:layout_height="40dp"
+android:layout_below="@+id/view_compose_message_middle_line"
+android:layout_marginTop="20dp"
+android:layout_marginLeft="30dp"
+android:text="To:"
+android:gravity="center"
+android:textColor="@color/Black"
+/>
+<EditText android:id="@+id/et_compose_message_to" 
+android:layout_width="220dp"
+android:layout_height="40dp"
+android:layout_below="@+id/view_compose_message_middle_line"
+android:layout_toRightOf="@+id/tv_compose_message_to"
+android:layout_marginTop="20dp"
+android:singleLine="true"
+/>
+
+<TextView android:id="@+id/tv_compose_message_subject"
+android:layout_width="70dp"
+android:layout_height="40dp"
+android:layout_below="@+id/tv_compose_message_to"
+android:layout_marginTop="5dp"
+android:layout_marginLeft="30dp"
+android:text="Subject:"
+android:gravity="center"
+android:textColor="@color/Black"
+/>
+<EditText android:id="@+id/et_compose_message_subject" 
+android:layout_width="220dp"
+android:layout_height="40dp"
+android:layout_below="@+id/et_compose_message_to"
+android:layout_toRightOf="@+id/tv_compose_message_subject"
+android:layout_marginTop="5dp"
+android:singleLine="true"
+/>
+<TextView android:id="@+id/tv_compose_message_message"
+android:layout_width="70dp"
+android:layout_height="40dp"
+android:layout_below="@+id/tv_compose_message_subject"
+android:layout_marginTop="5dp"
+android:layout_marginLeft="30dp"
+android:text="Message:"
+android:gravity="center"
+android:textColor="@color/Black"
+/>
+<EditText android:id="@+id/et_compose_message_message" 
+android:layout_width="220dp"
+android:layout_height="120dp"
+android:layout_below="@+id/et_compose_message_subject"
+android:layout_toRightOf="@+id/tv_compose_message_message"
+android:layout_marginTop="5dp"
+
+/>
+<Button 
+  android:id="@+id/btn_compose_message_send" 
+  android:layout_width="70dp"
+  android:layout_height="40dp"
+  android:background="@color/Green"
+  android:text="Send"
+  android:textColor="@color/whitecolor"
+  android:textStyle="bold"
+  android:layout_below="@+id/et_compose_message_message"
+  android:layout_marginTop="3dp"
+android:layout_marginLeft="100dp"
+  />
+<Button 
+  android:id="@+id/btn_compose_message_cancel" 
+  android:layout_width="70dp"
+  android:layout_height="40dp"
+  android:background="@color/Green"
+  android:text="Cancel"
+  android:textColor="@color/whitecolor"
+  android:textStyle="bold"
+  android:layout_toRightOf="@+id/btn_compose_message_send"
+  android:layout_below="@+id/et_compose_message_message"
+  android:layout_marginTop="3dp"
+android:layout_marginLeft="10dp"
+  />
+</RelativeLayout>

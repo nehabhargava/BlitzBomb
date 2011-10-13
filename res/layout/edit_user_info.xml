@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="#ffffff">
+  <RelativeLayout 
+  android:id="@+id/rr_Edituserinformation_title"
+  android:layout_height="80dp" 
+  android:layout_width="fill_parent"
+  android:background="@drawable/topsmokeeffect">
+  <ImageView android:id="@+id/iv_edit_user_information_user_image"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginTop="10dp"
+  android:src="@drawable/icon"/>
+  <Button 
+  android:id="@+id/btn_edit_user_info_change_picture" 
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/iv_edit_user_information_user_image"
+  android:background="@color/whitecolor"
+  android:text="Change Picture"
+  android:textColor="@color/Black"/>
+  <Button 
+  android:id="@+id/btn_edit_user_info_change_password" 
+  android:layout_toRightOf="@+id/btn_edit_user_info_change_picture"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="10dp"
+  android:layout_below="@+id/iv_edit_user_information_user_image"
+  android:background="@color/whitecolor"
+  android:text="Change Password"
+  android:textColor="@color/Black"/>
+</RelativeLayout>
+  <ScrollView 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_below="@+id/rr_Edituserinformation_title"
+  android:layout_above="@+id/rr_Edituserinformation_buttom"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <RelativeLayout 
+   android:id="@+id/rr_Edituserinformation_basicInfo1"
+   android:layout_below="@+id/rr_Edituserinformation_title"
+   android:layout_height="wrap_content" 
+   android:layout_width="fill_parent">
+   <RelativeLayout 
+   android:id="@+id/rr_Edituserinformation_basicInfo"
+   android:layout_alignParentTop="true"
+   android:layout_height="wrap_content" 
+   android:layout_width="fill_parent">
+  
+    <View 
+   android:id="@+id/view_Edituserinfo_middle_line_basicinfo"
+   android:layout_below="@+id/rr_Edituserinformation_basicInfo"
+    android:layout_width="fill_parent" 
+   android:layout_height="30dp"                          
+   android:background="@drawable/bar"></View>
+ 
+
+   <TextView 
+   android:id="@+id/tv_Edituserinfo_basic_information"
+    android:layout_width="fill_parent" 
+   android:layout_height="wrap_content"
+   android:layout_marginTop="7dp"
+   android:layout_marginLeft="7dp"                      
+    android:textColor="#000000"
+   android:text="Basic Information"
+   android:layout_alignParentTop="true"/>
+   
+   <TextView android:id="@+id/tv_Edituserinformation_firstName"
+   android:layout_below="@+id/view_Edituserinfo_middle_line_basicinfo"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="FirstName"
+   android:textColor="@color/Black"/>
+   <EditText  
+   android:id="@+id/et_Edituserinformation_firstName_selected"
+   android:layout_marginLeft="8dp"
+   android:layout_below="@+id/tv_Edituserinformation_firstName"
+   android:layout_height="wrap_content" 
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:hint="Frist Name"/>
+   
+    <TextView android:id="@+id/tv_Edituserinformation_lastName"
+   android:layout_below="@+id/et_Edituserinformation_firstName_selected"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="LastName"
+   android:textColor="@color/Black"/>
+   <EditText  
+   android:id="@+id/et_Edituserinformation_lastName_selected"
+   android:layout_marginLeft="8dp"
+   android:layout_below="@+id/tv_Edituserinformation_lastName"
+   android:layout_height="wrap_content" 
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:hint="Last Name"/>
+   
+   <TextView 
+   android:id="@+id/tv_Edituserinformation_about_me" 
+   android:layout_marginLeft="8dp"
+   android:layout_marginTop="10dp"
+   android:layout_below="@+id/et_Edituserinformation_lastName_selected"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="About me :"/>
+  
+   <EditText  
+   android:id="@+id/et_Edituserinformation_about_me_selected"
+   android:layout_marginLeft="8dp"
+   android:layout_below="@+id/tv_Edituserinformation_about_me"
+  
+   android:layout_height="wrap_content" 
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:hint="About me"/>
+   
+   <TextView 
+   android:id="@+id/tv_Edituserinformation_Language"
+   android:layout_below="@+id/et_Edituserinformation_about_me_selected" 
+   android:layout_marginTop="2dp"
+   android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Language :"/>           
+   <EditText 
+   android:id="@+id/et_Edituserinformation_language_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Language" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+    
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" android:text=""/>
+   
+    <TextView android:id="@+id/tv_Edituserinformation_gender"
+   android:layout_below="@+id/et_Edituserinformation_language_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="wrap_content" android:text="Sex :"/>
+  <Spinner
+   android:id="@+id/sp_Edituserinformation_gender_selected"
+   android:layout_below="@+id/tv_Edituserinformation_gender" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:prompt="@string/gender"
+    android:layout_height="40dp" 
+    android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text=""/>
+    <TextView android:id="@+id/tv_Edituserinformation_ethenicity"
+   android:layout_below="@+id/sp_Edituserinformation_gender_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="8dp"
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="wrap_content" android:text="Ethnicity :"/>   
+   <Spinner
+   android:id="@+id/sp_Edituserinformation_ethnicity_selected"
+   android:layout_below="@+id/tv_Edituserinformation_ethenicity" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:prompt="@string/gender" 
+    android:layout_height="40dp" 
+    android:textColor="#000000"
+   android:layout_width="300dp"
+    android:text=""/>            
+  <TextView android:id="@+id/tv_Edituserinformation_dateOfBrith"
+   android:layout_below="@+id/sp_Edituserinformation_ethnicity_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="8dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Date Of Brith :"/>
+   
+   <EditText android:id="@+id/et_Edituserinformation_date_of_birth_selected"
+   android:layout_below="@+id/tv_Edituserinformation_dateOfBrith" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp"
+   android:text=""/>
+   
+    <TextView 
+   android:id="@+id/tv_Edituserinformation_relation"
+   android:layout_below="@+id/et_Edituserinformation_date_of_birth_selected" 
+   android:layout_marginTop="2dp"
+   android:layout_marginLeft="15dp"
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="wrap_content" android:text="Relation :"/>
+   <Spinner 
+   android:id="@+id/sp_Edituserinformation_relation_selected"
+   android:layout_below="@+id/tv_Edituserinformation_relation" 
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="8dp"
+   android:prompt="@string/Title"
+   android:layout_height="40dp" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text=""/>
+   <ImageView android:id="@+id/iv_Edituserinformation_relation" 
+    android:layout_below="@+id/sp_Edituserinformation_relation_selected" 
+     android:layout_marginTop="5dp"
+   android:layout_marginLeft="8dp"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:src="@drawable/icon"/>
+   <EditText 
+   android:id="@+id/et_Edituserinformation_relation_name"
+   android:layout_below="@+id/sp_Edituserinformation_relation_selected" 
+   android:layout_toRightOf="@+id/iv_Edituserinformation_relation"
+   android:layout_marginTop="12dp"
+   android:layout_marginLeft="8dp"
+   android:layout_width="240dp"
+   android:layout_height="40dp" 
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"/>
+   <TextView android:id="@+id/tv_Edituserinformation_intrestedin"
+   android:layout_below="@+id/iv_Edituserinformation_relation" 
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="wrap_content" android:text="Intrested in :"/>
+   <CheckBox android:id="@+id/cb_Edituserinformation_men"
+   android:layout_below="@+id/tv_Edituserinformation_intrestedin"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Men" android:textColor="@color/Black"/>
+   <CheckBox android:id="@+id/cb_Edituserinformation_women"
+    android:layout_below="@+id/tv_Edituserinformation_intrestedin"
+   android:layout_toRightOf="@+id/cb_Edituserinformation_men"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Women" android:textColor="@color/Black"/>
+   
+    <TextView 
+    android:id="@+id/tv_Edituserinformation_current_city"
+    android:layout_below="@+id/cb_Edituserinformation_men" 
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Current city/Town :"/>
+   <EditText 
+   android:id="@+id/et_Edituserinformation_current_city"
+   android:layout_below="@+id/tv_Edituserinformation_current_city" 
+   android:layout_marginTop="12dp"
+   android:layout_marginLeft="8dp"
+   android:layout_width="300dp"
+   android:layout_height="40dp"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"/>
+   <TextView 
+    android:id="@+id/tv_Edituserinformation_Hometown"
+    android:layout_below="@+id/et_Edituserinformation_current_city" 
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_height="wrap_content" 
+    android:textColor="#000000"
+    android:layout_width="wrap_content" 
+    android:text="Home Town :"/>
+  <EditText 
+  android:id="@+id/et_Edituserinformation_Hometown"
+  android:layout_height="40dp"
+  android:layout_width="300dp"
+  android:hint="HomeTown"
+  android:layout_marginTop="5dp"
+  android:layout_marginLeft="5dp"
+  android:maxLines="1"
+  android:imeOptions="actionNext"
+  android:inputType="text|textNoSuggestions"
+  android:layout_below="@+id/tv_Edituserinformation_Hometown"/>
+   
+  </RelativeLayout>
+  <RelativeLayout 
+   android:id="@+id/rr_Edituserinfo_education_and_work"
+   android:layout_below="@+id/rr_Edituserinformation_basicInfo"
+   android:layout_height="wrap_content" android:layout_width="fill_parent">
+  
+    <View 
+   android:id="@+id/view_userinfo_middle_line_basicinfo"
+   android:layout_alignParentTop="true"
+    android:layout_width="fill_parent" 
+   android:layout_height="30dp"
+   android:background="@drawable/bar"></View>
+  
+   <TextView 
+   android:id="@+id/tv_userinfo_Education_and_work_information"
+   android:layout_width="fill_parent" 
+   android:layout_height="wrap_content"
+   android:layout_marginTop="7dp"
+   android:layout_marginLeft="7dp"
+   android:textColor="#000000"
+   android:text="Education and Work"
+   android:layout_alignParentTop="true"/>
+    <TextView 
+   android:id="@+id/tv_Edituserinformation_Collage"
+   android:layout_below="@+id/view_userinfo_middle_line_basicinfo" 
+   android:layout_marginTop="2dp"
+   android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Collage/University :"/>
+   <EditText android:id="@+id/et_Edituserinformation_Collage_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Collage" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   
+   android:layout_height="wrap_content" 
+   android:textColor="@color/Black"
+   android:layout_width="300dp" android:text=""/>
+   <TextView 
+   android:id="@+id/tv_Edituserinformation_high_school" 
+   android:layout_marginLeft="5dp"
+   android:layout_below="@+id/et_Edituserinformation_Collage_selected"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="High School :"/>
+   <EditText
+   android:id="@+id/et_Edituserinformation_High_school_selected" 
+   android:layout_marginLeft="8dp"
+   android:imeOptions="actionNext"
+   android:maxLines="1"
+   android:inputType="text|textNoSuggestions"
+   android:layout_below="@+id/tv_Edituserinformation_high_school"
+   android:layout_height="wrap_content" 
+   android:textColor="@color/Black"
+   android:layout_width="300dp" 
+   android:text=" "/>
+   
+   
+   
+   <!-- <TextView 
+   android:id="@+id/tv_Edituserinformation_Univercity"
+   android:layout_below="@+id/tv_Edituserinformation_Collage" 
+   android:layout_marginTop="35dp"
+    android:layout_marginLeft="2dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Univercity/Collage :"/>
+   <EditText 
+   android:id="@+id/et_Edituserinformation_univercity_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Collage" 
+   android:layout_marginTop="35dp"
+    android:layout_marginLeft="2dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+    android:layout_toRightOf="@+id/tv_Edituserinformation_Univercity"
+   android:layout_height="wrap_content"
+    android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text=""/> 
+   
+  <TextView 
+   android:id="@+id/tv_Edituserinformation_Occupation"
+   android:layout_below="@+id/tv_Edituserinformation_Univercity" 
+   android:layout_marginTop="35dp"
+   android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Occupation :"/>
+   <EditText 
+   android:id="@+id/et_Edituserinformation_occupation_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Univercity" 
+   android:layout_marginTop="35dp"
+    android:layout_marginLeft="25dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+    android:layout_toRightOf="@+id/tv_Edituserinformation_Occupation"
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="300dp" android:text=""/>-->
+  
+ <TextView 
+   android:id="@+id/tv_Edituserinformation_Employer"
+   android:layout_below="@+id/et_Edituserinformation_High_school_selected" 
+   android:layout_marginTop="2dp"
+   android:layout_marginLeft="15dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Employer :"/>
+   <EditText 
+   android:id="@+id/et_Edituserinformation_Employer_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Employer" 
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="8dp"
+   android:maxLines="1"
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"           
+   
+   android:layout_height="wrap_content"
+   android:textColor="#000000"
+   android:layout_width="300dp"
+   android:text=""/>
+   </RelativeLayout>           
+   <RelativeLayout android:id="@+id/rr_Edituserinformation_Entertainment"
+  android:layout_height="wrap_content" 
+  android:layout_below="@+id/rr_Edituserinfo_education_and_work"
+  android:layout_width="fill_parent">
+  
+    <View 
+   android:id="@+id/view_userinfo_middle_line_basicinfo"
+    android:layout_alignParentTop="true"
+    android:layout_width="fill_parent" 
+   android:layout_height="30dp"
+   android:background="@drawable/bar"></View>
+  
+   <TextView 
+   android:id="@+id/tv_userinfo_contact_information"
+    android:layout_width="fill_parent" 
+   android:layout_height="wrap_content"
+   android:layout_marginTop="7dp"
+   android:layout_marginLeft="7dp"
+    android:textColor="#000000"
+   android:text="Entertainment"
+   android:layout_alignParentTop="true"/>
+  
+   
+   
+   
+    <TextView 
+    android:id="@+id/tv_Edituserinformation_Music"
+    android:layout_below="@+id/view_userinfo_middle_line_basicinfo" 
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_height="wrap_content" 
+    android:textColor="#000000"
+    android:layout_width="wrap_content" 
+    android:text="Music:"/>
+   <EditText android:id="@+id/et_Edituserinformation_music_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Music" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text=" "/>
+    <TextView 
+    android:id="@+id/tv_Edituserinformation_Movies"
+   android:layout_below="@+id/et_Edituserinformation_music_selected" 
+   android:layout_marginTop="2dp"
+   android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Movies :"/>
+   <EditText 
+   android:id="@+id/et_Edituserinformation_movie_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Movies" 
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="8dp"
+   android:maxLines="1"
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="300dp" android:text=" "/>
+   <TextView android:id="@+id/tv_Edituserinformation_television"
+   android:layout_below="@+id/et_Edituserinformation_movie_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="wrap_content" android:text="Television :"/>
+   <EditText
+   android:id="@+id/et_Edituserinformation_television_selected"
+   android:layout_below="@+id/tv_Edituserinformation_television" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="300dp" android:text=" "/>
+   <TextView 
+    android:id="@+id/tv_Edituserinformation_games"
+   android:layout_below="@+id/et_Edituserinformation_television_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Games:"/>
+   <EditText android:id="@+id/et_Edituserinformation_games_selected"
+   android:layout_below="@+id/tv_Edituserinformation_games" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text=" "/>
+  
+   <TextView 
+    android:id="@+id/tv_Edituserinformation_Books"
+   android:layout_below="@+id/et_Edituserinformation_games_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Books:"/>
+   <EditText android:id="@+id/et_Edituserinformation_books_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Books" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   
+   android:layout_height="wrap_content" 
+   android:textColor="@color/Black"
+   android:layout_width="300dp" 
+   android:text=" "/>
+   </RelativeLayout>
+ 
+ 
+   <RelativeLayout android:id="@+id/rr_userinformation_Intrest"
+  android:layout_height="wrap_content" 
+  android:layout_below="@+id/rr_Edituserinformation_Entertainment"
+  android:layout_width="fill_parent">
+  
+    <View 
+   android:id="@+id/view_userinfo_middle_line_basicinfo"
+  android:layout_alignParentTop="true"
+    android:layout_width="fill_parent" 
+   android:layout_height="30dp"
+   android:background="@drawable/bar"></View>
+   
+   <TextView 
+   android:id="@+id/tv_userinfo_contact_information"
+    android:layout_width="fill_parent" 
+   android:layout_height="wrap_content"
+   android:layout_marginTop="7dp"
+   android:layout_marginLeft="17dp"
+    android:textColor="#000000"
+   android:text="Intrest "
+   android:layout_alignParentTop="true"/>
+   
+   <TextView android:id="@+id/tv_Edituserinformation_Intrest"
+   android:layout_below="@+id/view_userinfo_middle_line_basicinfo" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="wrap_content" android:text="Intrest :"/>
+   <EditText android:id="@+id/et_Edituserinformation_Intrest_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Intrest" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+  
+   android:layout_height="wrap_content" 
+   android:textColor="@color/Black"
+   android:layout_width="300dp" android:text=""/> 
+   
+  <TextView android:id="@+id/tv_Edituserinformation_Activity"
+   android:layout_below="@+id/et_Edituserinformation_Intrest_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="wrap_content" android:text="Activity :"/>
+   <EditText android:id="@+id/et_Edituserinformation_Activity_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Activity" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+    android:inputType="text|textNoSuggestions"
+   
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text=""/> 
+   <TextView android:id="@+id/tv_Edituserinformation_Who_whouldyoulike"
+   android:layout_below="@+id/et_Edituserinformation_Activity_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="wrap_content" android:text="Who Whould You Like :"/>
+   <EditText android:id="@+id/et_Edituserinformation_Who_whouldyoulike_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Who_whouldyoulike" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+    android:inputType="text|textNoSuggestions"
+    
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text=""/> 
+      <!-- <TextView android:id="@+id/tv_Edituserinformation_Who_whouldyoulike"
+   android:layout_below="@+id/et_Edituserinformation_Activity_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="@color/Black"
+   android:layout_width="wrap_content" 
+   android:text="Who Whould You Like :"/>
+   <EditText 
+   android:id="@+id/et_Edituserinformation_Activity_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Who_whouldyoulike" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+    android:inputType="text|textNoSuggestions"
+   
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text=""/>  -->
+ </RelativeLayout>
+   <RelativeLayout android:id="@+id/rr_userinformation_sport_info"
+  android:layout_height="wrap_content" 
+  android:layout_below="@+id/rr_userinformation_Intrest"
+  android:layout_width="fill_parent">
+ 
+    <View           
+   android:id="@+id/view_userinfo_middle_line_basicinfo"
+    android:layout_alignParentTop="true"
+    android:layout_width="fill_parent" 
+   android:layout_height="30dp"
+   android:background="@drawable/bar"></View>
+   <TextView 
+   android:id="@+id/tv_userinfo_contact_information"
+    android:layout_width="fill_parent" 
+   android:layout_height="wrap_content"
+   android:layout_marginTop="7dp"
+   android:layout_marginLeft="17dp"
+    android:textColor="#000000"
+   android:text="Sports"
+   android:layout_alignParentTop="true"/>
+   <TextView 
+   android:id="@+id/tv_Edituserinformation_sports_i_play" 
+   android:layout_marginLeft="25dp"
+   android:layout_below="@+id/view_userinfo_middle_line_basicinfo"
+   android:layout_height="wrap_content"
+    android:layout_marginTop="10dp" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Sports I Play :"/>
+   <EditText
+   android:id="@+id/et_Edituserinformation_sports_i_play_selected" 
+   android:layout_marginLeft="8dp"  
+    android:layout_marginTop="5dp" 
+   android:layout_below="@+id/tv_Edituserinformation_sports_i_play"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text="  "/>
+   <TextView 
+   android:id="@+id/tv_Edituserinformation_favorite_sport" 
+   android:layout_marginLeft="5dp"
+   android:layout_below="@+id/et_Edituserinformation_sports_i_play_selected"
+   android:layout_height="wrap_content"
+    android:layout_marginTop="2dp" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Favorite Sport :"/>
+   <EditText
+   android:id="@+id/et_Edituserinformation_favorite_sport_selected" 
+   android:layout_marginLeft="8dp"
+    android:layout_marginTop="5dp" 
+   android:layout_below="@+id/tv_Edituserinformation_favorite_sport"
+   android:layout_height="wrap_content" 
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text="  "/>
+    <TextView 
+   android:id="@+id/tv_Edituserinformation_favorite_college" 
+   android:layout_marginLeft="5dp"
+   android:layout_below="@+id/et_Edituserinformation_favorite_sport_selected"
+   android:layout_height="wrap_content"
+    android:layout_marginTop="2dp" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Fovorite College/University Team :"/>
+   <EditText
+   android:id="@+id/et_Edituserinformation_favorite_college_selected" 
+   android:layout_marginLeft="8dp"
+    android:layout_marginTop="5dp" 
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:layout_below="@+id/tv_Edituserinformation_favorite_college"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text="  "/>
+    <TextView 
+   android:id="@+id/tv_Edituserinformation_favorite_professionaTeam" 
+   android:layout_marginLeft="5dp"
+   android:layout_below="@+id/et_Edituserinformation_favorite_college_selected"
+   android:layout_height="wrap_content"
+    android:layout_marginTop="10dp" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Fovorite Professional Team :"/>
+   <EditText
+   android:id="@+id/et_Edituserinformation_favorite_professionaTeam_selected" 
+   android:layout_marginLeft="8dp"
+    android:layout_marginTop="5dp" 
+     android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:layout_below="@+id/tv_Edituserinformation_favorite_professionaTeam"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text="  "/>
+   <TextView 
+   android:id="@+id/tv_Edituserinformation_favorite_Athlets" 
+   android:layout_marginLeft="5dp"
+   android:layout_below="@+id/et_Edituserinformation_favorite_professionaTeam_selected"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="10dp" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Fovorite Athelets:"/>
+   <EditText
+   android:id="@+id/et_Edituserinformation_favorite_Athlets_selected" 
+   android:layout_marginLeft="8dp"
+   android:layout_marginTop="5dp" 
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:layout_below="@+id/tv_Edituserinformation_favorite_Athlets"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text="  "/>
+   </RelativeLayout>
+   <RelativeLayout 
+   android:id="@+id/rr_userinformation_philosophy_info"
+   android:layout_height="wrap_content" 
+   android:layout_below="@+id/rr_userinformation_sport_info"
+   android:layout_width="fill_parent">
+  
+    <View 
+   android:id="@+id/view_userinfo_middle_line_basicinfo"
+   android:layout_alignParentTop="true"
+   android:layout_width="fill_parent" 
+   android:layout_height="30dp"
+   android:background="@drawable/bar"></View>
+  
+   <TextView 
+   android:id="@+id/tv_userinfo_contact_information"
+   android:layout_width="fill_parent" 
+   android:layout_height="wrap_content"
+   android:layout_marginTop="7dp"
+   android:layout_marginLeft="17dp"
+   android:textColor="#000000"
+   android:text="Philosohy"
+   android:layout_alignParentTop="true"/>
+   <TextView 
+   android:id="@+id/tv_Edituserinformation_plitical_view" 
+   android:layout_marginLeft="5dp"
+   android:layout_marginTop="10dp"
+   android:layout_below="@+id/view_userinfo_middle_line_basicinfo"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="political View :"/>
+   <EditText      
+   android:id="@+id/et_Edituserinformation_plitical_selected" 
+   android:layout_marginLeft="15dp"
+   android:maxLines="1"
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:layout_below="@+id/tv_Edituserinformation_plitical_view"
+  
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text=" "/>
+   
+   <TextView 
+   android:id="@+id/tv_Edituserinformation_regieous_view"
+   android:layout_below="@+id/et_Edituserinformation_plitical_selected" 
+   android:layout_marginTop="2dp"
+   android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="religeous View :"/>
+   <EditText
+   android:id="@+id/et_Edituserinformation_regieous_selected"
+   android:layout_below="@+id/tv_Edituserinformation_regieous_view" 
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="8dp"
+   android:maxLines="1"
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   
+   
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text=""/>
+   
+  <TextView android:id="@+id/tv_Edituserinformation_favorate_qoute"
+   android:layout_below="@+id/et_Edituserinformation_regieous_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Favorate Qoute :"/>
+   <EditText 
+   android:id="@+id/et_Edituserinformation_fav_Qoute_selected"
+   android:layout_below="@+id/tv_Edituserinformation_favorate_qoute" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:maxLines="1"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+ 
+   android:layout_height="wrap_content" android:textColor="#000000"
+   android:layout_width="300dp" android:text=""/> 
+  </RelativeLayout> 
+  <RelativeLayout android:id="@+id/rr_userinformation_contact_info"
+  android:layout_height="wrap_content" 
+  android:layout_below="@+id/rr_userinformation_philosophy_info"
+  android:layout_width="fill_parent">
+  
+    <View 
+   android:id="@+id/view_userinfo_middle_line_basicinfo"
+    android:layout_alignParentTop="true"
+    android:layout_width="fill_parent" 
+   android:layout_height="30dp"
+   android:background="@drawable/bar"></View>
+  
+   <TextView 
+   android:id="@+id/tv_userinfo_contact_information"
+    android:layout_width="fill_parent" 
+   android:layout_height="wrap_content"
+   android:layout_marginTop="7dp"
+   android:layout_marginLeft="17dp"
+    android:textColor="#000000"
+   android:text="Contact Information"
+   android:layout_alignParentTop="true"/>
+   <TextView 
+   android:id="@+id/tv_Edituserinformation_Email" 
+   android:layout_marginLeft="5dp"
+   android:layout_below="@+id/view_userinfo_middle_line_basicinfo"
+   android:layout_height="wrap_content"
+    android:layout_marginTop="2dp" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Other Email :"/>
+   <EditText
+   android:id="@+id/et_Edituserinformation_email_selected" 
+   android:layout_marginLeft="5dp"
+    android:layout_marginTop="8dp" 
+   android:layout_below="@+id/tv_Edituserinformation_Email"
+  android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text="  "/>
+   
+     <TextView 
+   android:id="@+id/tv_Edituserinformation_Mobile_no"
+   android:layout_below="@+id/et_Edituserinformation_email_selected" 
+   android:layout_marginTop="2dp"
+   android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Phone No. :"/>
+   <EditText 
+   android:id="@+id/et_Edituserinformation_Mobile_no_selected"
+   android:layout_below="@+id/tv_Edituserinformation_Mobile_no" 
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="8dp"
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:layout_height="wrap_content"
+   android:textColor="#000000"
+   android:layout_width="300dp"
+   android:text=""/>
+   
+   <TextView 
+   android:id="@+id/tv_Edituserinformation_IM_Screen_name"
+   android:layout_below="@+id/et_Edituserinformation_Mobile_no_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content"
+   android:text="IM Screen Name :"/>
+   <EditText android:id="@+id/et_Edituserinformation_IM_Screen_name_selected"
+   android:layout_below="@+id/tv_Edituserinformation_IM_Screen_name" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp" 
+   android:text="  "/>
+   
+  <TextView 
+   android:id="@+id/tv_Edituserinformation_address"
+   android:layout_below="@+id/et_Edituserinformation_IM_Screen_name_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" android:text="Address :"/>
+   <EditText android:id="@+id/et_Edituserinformation_address_selected"
+   android:layout_below="@+id/tv_Edituserinformation_address" 
+   android:layout_marginTop="5dp"
+    android:layout_marginLeft="8dp"
+    android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="300dp"
+    android:text=""/>
+    <TextView 
+    android:id="@+id/tv_Edituserinformation_city"
+   android:layout_below="@+id/et_Edituserinformation_address_selected" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="@color/Black"
+   android:layout_width="wrap_content" 
+   android:text="City:"/>
+   <Spinner 
+   android:id="@+id/sp_Edituserinformation_select_city"
+   android:layout_height="40dp"
+   android:layout_width="300dp"
+   android:prompt="@string/City"
+   android:layout_below="@+id/tv_Edituserinformation_city" 
+  
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="8dp"/>
+  <TextView 
+    android:id="@+id/tv_Edituserinformation_State"
+   android:layout_below="@+id/sp_Edituserinformation_select_city" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="State:"/>
+   <Spinner 
+   android:id="@+id/sp_Edituserinformation_select_state"
+   android:layout_height="40dp"
+   android:layout_width="300dp"
+   android:prompt="@string/State"
+   android:layout_below="@+id/tv_Edituserinformation_State" 
+   
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="8dp"
+  />
+    <TextView 
+    android:id="@+id/tv_Edituserinformation_Country"
+   android:layout_below="@+id/sp_Edituserinformation_select_state" 
+   android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="@color/Black"
+   android:layout_width="wrap_content" 
+   android:text="Country:"/>
+   <Spinner 
+   android:id="@+id/sp_Edituserinformation_select_country"
+   android:layout_height="40dp"
+   android:layout_width="300dp"
+    android:prompt="@string/Title"
+   android:layout_below="@+id/tv_Edituserinformation_Country" 
+   
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="8dp"/>
+   
+    
+    <TextView 
+   android:id="@+id/tv_Edituserinformation_zipcode"
+   android:layout_below="@+id/sp_Edituserinformation_select_country" 
+   android:layout_marginTop="2dp"
+   android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Postal Code:"/>
+   <EditText 
+   android:id="@+id/et_Edituserinformation_zipcode_selected"
+   android:layout_below="@+id/tv_Edituserinformation_zipcode" 
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="8dp"
+  
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:maxLines="1"
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:layout_width="300dp" android:text=" "/>
+   
+   <TextView 
+   android:id="@+id/tv_Edituserinformation_website"
+   android:layout_below="@+id/et_Edituserinformation_zipcode_selected" 
+   android:layout_marginTop="2dp"
+   android:layout_marginLeft="5dp"
+   android:layout_height="wrap_content" 
+   android:textColor="#000000"
+   android:layout_width="wrap_content" 
+   android:text="Website :"/>
+   <EditText 
+   android:id="@+id/et_Edituserinformation_website_selected"
+   android:layout_below="@+id/tv_Edituserinformation_website" 
+   android:layout_marginTop="5dp"
+   android:layout_marginLeft="8dp"
+   android:maxLines="1"
+   
+   android:layout_height="wrap_content" 
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:textColor="#000000"
+   android:layout_width="300dp" android:text=" "/> 
+  </RelativeLayout>
+  </RelativeLayout>
+  </ScrollView>
+  <RelativeLayout android:id="@+id/rr_Edituserinformation_buttom"
+  android:layout_height="wrap_content" 
+ android:layout_alignParentBottom="true"
+  android:layout_width="fill_parent"
+  android:background="@color/Grey">
+  <Button android:id="@+id/btn_Edituserinformation_save"
+  android:layout_width="100dp"
+  android:layout_height="40dp"
+  android:layout_alignParentRight="true"
+  android:text="Save"
+  android:textColor="@color/Black"/>
+  <Button android:id="@+id/btn_Edituserinformation_cancel"
+  android:layout_width="100dp"
+  android:layout_height="40dp"
+  android:layout_alignParentLeft="true"
+  android:text="Cancel"
+  android:textColor="@color/Black"/>
+  </RelativeLayout> 
+</RelativeLayout>

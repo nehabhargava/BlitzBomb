@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@color/whitecolor" >
+ 
+  <ImageView android:id="@+id/iv_News_Stream_user_post" 
+  android:src="@drawable/icon" 
+  android:layout_height="60dp" 
+  
+  android:layout_width="wrap_content" 
+  android:layout_below="@+id/tv_News_stream_header"/>
+  <TextView
+  android:id="@+id/tv_news_stream_Chillin" 
+  android:layout_toRightOf="@+id/iv_News_Stream_user_post"
+  android:layout_marginTop="5dp" 
+  android:layout_marginLeft="70dp"
+   android:textColor="#000000"
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:text="Chillin At:"/>
+  <Button
+  android:id="@+id/btn_News_stream_Chillin_location"
+ android:gravity="top"
+ android:layout_marginTop="5dp" 
+ android:layout_marginLeft="5dp" 
+  android:layout_toRightOf="@+id/tv_news_stream_Chillin"
+  android:layout_width="130dp" 
+   android:layout_height="52dp" 
+   android:textColor="#808000"
+  android:background="#ffffff"
+  android:text="indore"/>
+  <RelativeLayout android:id="@+id/rr_post_tab" android:layout_height="wrap_content"
+   android:layout_below="@+id/iv_News_Stream_user_post"
+    android:layout_width="fill_parent"
+  android:orientation="vertical">
+<EditText android:id="@+id/et_News_Stream_share"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:hint="Post Something..."
+android:maxLines="1"
+android:inputType="textNoSuggestions"
+android:imeOptions="actionGo"
+android:singleLine="true"
+android:linksClickable="true"
+
+/>
+  </RelativeLayout>
+
+   <ListView android:id="@id/android:list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="#ffffff"
+    android:layout_below="@+id/rr_post_tab"
+    android:drawSelectorOnTop="false"
+    android:descendantFocusability="beforeDescendants"
+    />
+    
+</RelativeLayout>

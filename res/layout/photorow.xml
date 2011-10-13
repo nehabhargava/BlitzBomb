@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="#ffffff">
+  <ImageView android:id="@+id/iv_album_row_album"
+  android:layout_width="wrap_content"
+  android:src="@drawable/icon"
+  android:layout_height="wrap_content"></ImageView>
+  <TextView android:id="@+id/tv_album_name_of_album"
+   android:layout_height="wrap_content" 
+   android:layout_width="wrap_content"
+   android:textSize="10dp"
+   android:layout_toRightOf="@+id/iv_album_row_album"
+   android:textColor="@color/Black"
+   android:layout_marginTop="10dp"
+   
+   android:text="Album name"/>
+   <TextView android:id="@+id/tv_album_no_of_photo"
+   android:layout_height="wrap_content" 
+   android:layout_width="wrap_content"
+   android:textSize="10dp"
+   android:layout_below="@+id/tv_album_name_of_album"
+   android:layout_toRightOf="@+id/iv_album_row_album"
+   android:textColor="@color/Black"
+  android:text="1 photo"/>
+   <TextView android:id="@+id/tv_album_photo_date"
+   android:layout_height="wrap_content" 
+   android:layout_width="wrap_content"
+   android:textSize="10dp"
+  android:layout_alignParentRight="true"
+   android:layout_marginTop="10dp"
+   android:layout_marginRight="10dp"
+   android:textColor="@color/Black"
+  android:text="26/6/2011"/>
+</RelativeLayout>

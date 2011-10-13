@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/smaoke_bg">
+  <RelativeLayout 
+  android:id="@+id/rr_Setting_title"
+  android:layout_height="60dp" 
+  android:layout_width="fill_parent"
+  android:background="@drawable/topsmokeeffect"
+  >
+  <ImageView android:layout_width="fill_parent"
+  android:layout_height="60dp"
+  android:id="@+id/iv_change_password_change_password"
+  android:src="@drawable/small_logo"/>
+</RelativeLayout>
+  <RelativeLayout 
+    android:id="@+id/rr_Setting_gird_view"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_marginTop="20dp"
+	android:layout_below="@+id/rr_Setting_title">
+	<GridView 
+	    android:id="@+id/gv_Setting_Grid" 
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:columnWidth="90dp"
+		android:numColumns="2" 
+		android:verticalSpacing="60dip"
+		android:horizontalSpacing="10dip"
+		android:stretchMode="columnWidth"
+		android:gravity="center"/>
+    </RelativeLayout>
+   
+</RelativeLayout>

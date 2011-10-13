@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/whitecolor"
+  >
+<Button 
+  android:id="@+id/btn_sent_message_sent_messages" 
+  android:layout_width="120dp"
+  android:layout_height="50dp"
+  android:background="@color/dullwhitecolor"
+  android:text="Sent Messages"
+  android:textColor="@color/Black"
+  android:textStyle="bold"
+  />
+  
+  <Button 
+  android:id="@+id/btn_sent_message_inbox" 
+  android:layout_width="70dp"
+  android:layout_height="50dp"
+  android:layout_toRightOf="@+id/btn_sent_message_sent_messages"
+  android:background="@color/dullwhitecolor"
+  android:text="Inbox"
+  android:textColor="@color/Black"
+  android:textStyle="bold"
+  />
+
+<Button 
+  android:id="@+id/btn_sent_message_compose_message" 
+  android:layout_width="160dp"
+  android:layout_height="50dp"
+  android:layout_toRightOf="@+id/btn_sent_message_inbox"
+  android:background="@color/dullwhitecolor"
+  android:text="Compose Message"
+  android:textColor="@color/Black"
+  android:textStyle="bold"
+  />
+    <View 
+   android:id="@+id/view_sent_message_middle_line"
+   android:layout_below="@+id/btn_sent_message_sent_messages"
+    android:layout_width="fill_parent" 
+    android:layout_height="10dp"                          
+    
+    ></View>
+
+<TextView android:id="@+id/tv_sent_message"
+    android:layout_width="200dp"
+    android:layout_height="30dp"
+    android:layout_below="@+id/view_sent_message_middle_line"
+    android:layout_marginTop="10dp"
+    android:text="No Records Found!"
+    android:textColor="@color/Black"
+     />
+
+</RelativeLayout>

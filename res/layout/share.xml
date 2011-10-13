@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" 
+  android:background="@color/dullwhitecolor"
+  android:layout_height="fill_parent">
+  <EditText
+   android:id="@+id/et_news_stream_postComments_tab" 
+   android:layout_width="fill_parent"
+   android:maxLines="10"
+   android:imeOptions="actionDone"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="10dp"/>
+  <ImageView android:id="@+id/iv_share_addphoto" 
+  android:layout_height="wrap_content" 
+  android:layout_width="wrap_content"
+  android:layout_marginTop="4dp"
+  android:layout_marginLeft="2dp"
+  android:layout_below="@+id/et_news_stream_postComments_tab"
+  android:src="@drawable/addphoto"/>
+  <TextView 
+  android:id="@+id/tv_share_addphoto"
+  android:text="Add Photo"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/et_news_stream_postComments_tab"
+  android:layout_toRightOf="@+id/iv_share_addphoto"
+  android:textColor="#000000"/>
+  <ImageView android:id="@+id/iv_share_addvideo" 
+  android:layout_height="wrap_content" 
+  android:layout_width="wrap_content"
+  android:layout_marginTop="4dp"
+  android:layout_marginLeft="2dp"
+  android:layout_toRightOf="@+id/tv_share_addphoto" 
+  android:layout_below="@+id/et_news_stream_postComments_tab"
+  android:src="@drawable/addvideo"/>
+ <TextView 
+ android:id="@+id/tv_share_addvideo"
+ android:text="Add Video"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_below="@+id/et_news_stream_postComments_tab"
+ android:layout_toRightOf="@+id/iv_share_addvideo"
+ android:textColor="#000000"/>
+  <ImageView android:id="@+id/iv_share_addmusic" 
+  android:layout_height="wrap_content" 
+  android:layout_width="wrap_content"
+  android:layout_marginTop="4dp"
+  android:layout_marginLeft="2dp"
+  android:layout_toRightOf="@+id/tv_share_addvideo" 
+ android:layout_below="@+id/et_news_stream_postComments_tab"
+ android:src="@drawable/addmusic1" />
+ <TextView android:id="@+id/tv_share_addmusic"
+ android:text="Add Music"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_below="@+id/et_news_stream_postComments_tab"
+ android:layout_toRightOf="@+id/iv_share_addmusic"
+ android:textColor="#000000"/>
+ <ImageView android:id="@+id/iv_share_addlink" 
+  android:layout_height="wrap_content" 
+  android:layout_width="wrap_content"
+  android:layout_marginTop="4dp"
+  android:layout_marginLeft="2dp"
+  android:layout_toRightOf="@+id/tv_share_addmusic" 
+ android:layout_below="@+id/et_news_stream_postComments_tab"
+ android:src="@drawable/addlink"/>
+ <TextView 
+ android:id="@+id/tv_share_addlink"
+ android:text="Add Link"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_below="@+id/et_news_stream_postComments_tab"
+ android:layout_toRightOf="@+id/iv_share_addlink"
+ android:textColor="#000000"/> 
+ <Button 
+  android:id="@+id/btn_share"
+  android:layout_width="wrap_content"
+  android:layout_height="40dp"
+  android:paddingBottom="10dp"
+  android:layout_below="@+id/tv_share_addlink"
+  android:text="Share"
+  android:layout_alignParentRight="true"/>  
+</RelativeLayout>

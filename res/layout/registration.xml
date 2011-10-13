@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#eeeeee">
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/smaoke_bg">
+  <ImageView android:id="@+id/iv_register_logo" 
+  android:layout_height="wrap_content"
+  android:layout_width="fill_parent"
+  android:layout_alignParentTop="true"
+  android:src="@drawable/blitzbomblogo"/>
+  <ScrollView 
+   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+   android:layout_below="@+id/iv_register_logo">
+  <RelativeLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="5dp"
+  android:layout_below="@+id/iv_register_logo"
+  android:background="@color/whitecolor">
+  <RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerInParent="true">
+   <EditText 
+   android:layout_height="wrap_content" 
+   android:layout_width="300dp"
+   android:id="@+id/et_registration_first_name"
+   android:layout_marginTop="4dp"
+   android:layout_below="@+id/tv_login"
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:maxLines="1"
+   android:hint="first Name"
+   android:layout_marginLeft="5dp"
+   android:maxLength="30"/>
+    <EditText 
+   android:layout_height="wrap_content" 
+   android:layout_width="300dp"
+   android:id="@+id/et_registration_last_name"
+   android:layout_marginTop="4dp"
+   android:layout_below="@+id/et_registration_first_name"
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:maxLines="1"
+   android:hint="Last Name"
+   android:layout_marginLeft="5dp"
+   android:maxLength="30"/>
+   <EditText 
+   android:layout_height="wrap_content" 
+   android:layout_width="300dp"
+   android:id="@+id/et_registration_Email"
+   android:layout_marginTop="4dp"
+   android:layout_below="@+id/et_registration_last_name"
+   android:imeOptions="actionNext"
+   android:inputType="text|textNoSuggestions"
+   android:maxLines="1"
+   android:hint="Email"
+   android:layout_marginLeft="5dp"
+   android:maxLength="50"/>
+    <EditText 
+   android:layout_height="wrap_content" 
+   android:layout_width="300dp"
+   android:id="@+id/et_registration_Password"
+   android:layout_marginTop="4dp"
+   android:layout_below="@+id/et_registration_Email"
+   android:imeOptions="actionNext"
+   android:inputType="textPassword|textNoSuggestions"
+   android:maxLines="1"
+   android:hint="Password"
+   android:layout_marginLeft="5dp"
+   android:maxLength="15"/>
+    <EditText 
+   android:layout_height="wrap_content" 
+   android:layout_width="300dp"
+   android:id="@+id/et_registration_confirm_Password"
+   android:layout_marginTop="4dp"
+   android:layout_below="@+id/et_registration_Password"
+   android:imeOptions="actionDone"
+   android:inputType="textPassword|textNoSuggestions"
+   android:maxLines="1"
+   android:hint="Confirm Password"
+   android:layout_marginLeft="5dp"
+   android:maxLength="15"/>
+    <Button android:id="@+id/btn_register_save" 
+        
+          android:textSize="12dp"
+          android:layout_below="@+id/et_registration_confirm_Password"
+           android:layout_marginLeft="2dp"
+          android:layout_width="100dp" 
+          android:layout_height="wrap_content" 
+          android:text="Save"></Button>
+           <Button android:id="@+id/btn_register_cancel" 
+        
+          android:textSize="12dp"
+          android:layout_toRightOf="@+id/btn_register_save"
+          android:layout_below="@+id/et_registration_confirm_Password"
+           android:layout_marginLeft="100dp"
+          android:layout_width="100dp" 
+          android:layout_height="wrap_content" 
+          android:text="Cancel"></Button>
+        </RelativeLayout>
+   </RelativeLayout>
+  </ScrollView>
+</RelativeLayout>
+</RelativeLayout>

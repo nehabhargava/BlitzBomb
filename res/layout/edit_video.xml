@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <RelativeLayout android:layout_width="fill_parent"
+  android:background="@color/Grey"
+  android:layout_height="fill_parent">
+  <ImageView android:id="@+id/iv_edit_video"
+  android:layout_height="wrap_content"
+  android:layout_width="wrap_content"
+  android:layout_marginTop="10dp"
+  android:src="@drawable/icon"/>
+  <Spinner 
+  android:id="@+id/sp_edit_video_category"
+  android:layout_below="@+id/iv_edit_video"
+  android:layout_marginTop="10dp"
+  android:layout_marginLeft="10dp"
+  android:layout_height="40dp"
+  android:layout_width="300dp"/>
+  <EditText android:layout_height="wrap_content" 
+  android:layout_width="300dp"
+   android:id="@+id/et_edit_video_video_title"
+   android:layout_marginTop="4dp"
+   android:inputType="text|textNoSuggestions"
+   android:maxLines="1"
+   android:hint="Title"
+   android:layout_marginLeft="10dp"
+  android:layout_below="@+id/sp_edit_video_category"
+   android:maxLength="30"></EditText>
+  <EditText android:layout_height="150dp" android:layout_width="300dp"
+   android:id="@+id/et_edit_video_video_description"
+   android:layout_marginTop="4dp"
+   android:inputType="text|textNoSuggestions"
+   android:maxLines="3"
+   android:hint="Description"
+   android:layout_marginLeft="10dp"
+  android:layout_below="@+id/et_edit_video_video_title"
+   android:maxLength="30"></EditText>
+   <TextView 
+   android:id="@+id/tv_edit_new_video_privacy"
+    android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     android:textColor="@color/Black"
+     android:textSize="10dp"
+     android:layout_marginLeft="50dp"
+     android:layout_below="@+id/et_edit_video_video_description"
+    android:text="Privacy :"
+    android:layout_width="wrap_content"/>
+    <Spinner 
+  android:id="@+id/sp_create_video_privacy"
+  android:layout_toRightOf="@+id/tv_edit_new_video_privacy"
+  android:layout_below="@+id/et_edit_video_video_description"
+  
+  android:layout_marginLeft="10dp"
+  android:layout_height="40dp"
+  android:layout_width="200dp"/>
+   <TextView 
+   android:id="@+id/tv_edit_new_video_comment_privacy"
+    android:layout_height="wrap_content"
+     android:layout_marginTop="24dp"
+     android:textSize="10dp"
+     android:textColor="@color/Black"
+     android:layout_marginLeft="4dp"
+     android:layout_below="@+id/tv_edit_new_video_privacy"
+    android:text="Comment Privacy :"
+    android:layout_width="wrap_content"/>
+  <Spinner 
+  android:id="@+id/sp_edit_video_comment_privacy"
+  android:layout_below="@+id/sp_create_video_privacy"
+  android:layout_toRightOf="@+id/tv_edit_new_video_comment_privacy"
+  android:layout_marginLeft="10dp"
+  android:layout_height="40dp"
+  android:layout_width="200dp"/>
+  <Button android:id="@+id/btn_edit_new_video_save"
+   android:layout_height="40dp"
+   android:layout_below="@+id/tv_edit_new_video_comment_privacy"
+   android:text="Save"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="60dp"
+  android:layout_width="200dp"/>
+  </RelativeLayout>
+</RelativeLayout>

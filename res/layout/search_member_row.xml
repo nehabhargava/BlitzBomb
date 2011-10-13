@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/dullwhitecolor">
+  <ImageView android:id="@+id/iv_search_member_row_user_image" android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:src="@drawable/icon"
+  android:layout_marginLeft="7dp"
+  android:layout_marginTop="7dp"/>
+  <TextView android:id="@+id/tv_search_member_row_username"
+  android:layout_marginTop="9dp"
+  android:layout_marginLeft="6dp"
+  android:textColor="@color/Black"
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:text="User name" android:textSize="10dp"
+  android:layout_toRightOf="@+id/iv_search_member_row_user_image"/>
+  <TextView android:id="@+id/tv_search_member_row_gender"
+  android:layout_marginTop="1dp"
+  android:layout_marginLeft="6dp"
+  android:textColor="@color/Black"
+  android:layout_below="@+id/tv_search_member_row_username"
+  android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:text="Gender" android:textSize="10dp"
+  android:layout_toRightOf="@+id/iv_search_member_row_user_image"/>
+  <TextView android:id="@+id/tv_search_member_row_age"
+  android:layout_marginTop="1dp"
+  android:layout_marginLeft="6dp"
+  android:textColor="@color/Black"
+  android:layout_below="@+id/tv_search_member_row_gender"
+  android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:text="Age" android:textSize="10dp"
+  android:layout_toRightOf="@+id/iv_search_member_row_user_image"/>
+  
+  <TextView 
+  android:id="@+id/tv_search_member_row_message"
+  android:layout_marginTop="20dp"
+  android:textColor="@color/Black"
+  
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:layout_alignParentRight="true"
+   android:layout_marginRight="20dp"
+  android:text="message" android:textSize="10dp"
+  />
+  <TextView 
+  android:id="@+id/tv_search_member_row_send_request"
+  android:layout_marginTop="1dp"
+  android:textColor="@color/Black"
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:text="send Request" 
+  android:textSize="10dp"
+  android:layout_alignParentRight="true"
+  android:layout_marginRight="10dp"
+  android:layout_below="@+id/tv_search_member_row_message"/>
+  <TextView 
+  android:id="@+id/tv_search_member_row_cancel_request"
+  android:layout_marginTop="1dp"
+  android:textColor="@color/Black"
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:text="cancel Request" 
+  android:textSize="10dp"
+  android:visibility="invisible"
+  android:layout_alignParentRight="true"
+  android:layout_marginRight="10dp"
+  android:layout_below="@+id/tv_search_member_row_message"/>
+  
+</RelativeLayout>

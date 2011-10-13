@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@color/whitecolor">
+  <RelativeLayout android:id="@+id/rr_album_title"
+  android:layout_width="fill_parent"
+  android:background="@drawable/topsmokeeffect"
+  android:layout_height="50dp">
+  <TextView 
+   android:layout_height="wrap_content" 
+   android:layout_width="wrap_content"
+   android:textSize="25dp"
+   android:textColor="@color/Black"
+   android:layout_marginTop="10dp"
+   android:layout_centerInParent="true"
+   android:text="Albums"/>
+   <ImageView 
+   android:id="@+id/iv_Photo_AddAlbum"
+   android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+   android:src="@drawable/add_album"
+   android:layout_alignParentRight="true"
+   android:layout_marginTop="6dp"
+   android:layout_marginRight="6dp"/>
+    <View
+    android:id="@+id/view_album_saprator_list"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp" 
+    android:layout_alignParentBottom="true"
+    android:background="#FF8040"/>
+   </RelativeLayout>
+   <RelativeLayout 
+   android:id="@+id/rr_album_list"
+   android:layout_height="wrap_content" 
+   android:layout_below="@+id/rr_album_title"
+   android:layout_width="fill_parent">
+    <ListView android:id="@id/android:list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="#ffffff"
+    android:layout_below="@+id/rr_profile_option_bar"
+    android:drawSelectorOnTop="false"/>
+   </RelativeLayout>
+  
+  </RelativeLayout>

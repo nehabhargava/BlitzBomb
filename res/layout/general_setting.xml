@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/whitecolor">
+  <RelativeLayout 
+  android:id="@+id/rr_GeneralSetting_title"
+  android:layout_height="60dp" 
+  android:layout_width="fill_parent"
+  android:background="@drawable/topsmokeeffect">
+  <ImageView android:layout_width="fill_parent"
+  android:layout_height="60dp"
+  android:id="@+id/iv_GeneralSetting"
+  android:src="@drawable/small_logo"/>
+  </RelativeLayout>
+<RelativeLayout 
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:layout_marginLeft="10dp"
+android:layout_centerInParent="true">
+<TextView
+android:id="@+id/tv_GeneralSetting"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="General Setting"
+android:textColor="@color/Green"
+android:textSize="14dp"/>
+<TextView
+android:id="@+id/tv_GeneralSetting_Email"
+android:layout_below="@+id/tv_GeneralSetting"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:text="Email:*"
+android:textColor="@color/Green"
+android:textSize="14dp"/>
+<EditText 
+android:id="@+id/et_GeneralSetting_selected"
+android:layout_below="@+id/tv_GeneralSetting_Email"
+android:layout_width="300dp"
+android:layout_height="40dp"
+android:inputType="text|textNoSuggestions"
+android:imeOptions="actionNext"
+android:layout_alignParentRight="true"
+android:layout_marginRight="1dp"/>
+
+<TextView
+android:id="@+id/tv_GeneralSetting_UserName"
+android:layout_below="@+id/et_GeneralSetting_selected"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:text="User Name:*"
+android:textColor="@color/Green"
+android:textSize="14dp"/>
+<EditText 
+android:id="@+id/et_GeneralSetting_UserName_selected"
+android:layout_below="@+id/tv_GeneralSetting_UserName"
+android:layout_width="300dp"
+android:layout_height="40dp"
+android:imeOptions="actionDone"
+android:inputType="text|textNoSuggestions"
+android:layout_alignParentRight="true"
+android:layout_marginRight="1dp"/>
+<Button android:id="@+id/btn_GeneralSetting_Save"
+android:layout_below="@+id/et_GeneralSetting_UserName_selected"
+android:layout_width="160dp"
+android:layout_height="35dp"
+android:background="@color/Green"
+android:text="Save Changes"
+android:textColor="@color/whitecolor"
+android:layout_marginTop="10dp"
+android:layout_marginLeft="10dp"/>
+<Button android:id="@+id/btn_GeneralSetting_Cancel"
+android:layout_below="@+id/et_GeneralSetting_UserName_selected"
+android:layout_alignParentRight="true"
+android:layout_marginRight="5dp"
+android:layout_width="100dp"
+android:layout_height="35dp"
+android:background="@color/Green"
+android:text="Cancel"
+android:textColor="@color/whitecolor"
+android:layout_marginTop="10dp"
+android:layout_marginLeft="10dp"/>
+</RelativeLayout>
+</RelativeLayout>
